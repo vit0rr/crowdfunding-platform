@@ -40,3 +40,13 @@ fn process_instruction(
     msg!("Didn't find the entrypoint required");
     Err(ProgramError:InvalidInstructionData)
     }
+    entrypoint!(process_instruction);
+
+    #[derive(BorshDeserialize, BorshSerialize, Debug)]
+struct CampaignDetails {
+    pub admin: Pubkey,
+    pub name: String,
+    pub description: String,
+    pub image_link: String,
+    pub amount_donated: u64,
+}
