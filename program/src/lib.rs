@@ -88,3 +88,19 @@ struct CampaignDetails {
             input_data.serialize(&mut &mut writing_account.data.borrow_mut()[..])?;
         Ok(())
     }
+
+    fn withdraw(
+        program_id: &Pubkey,
+        accounts: &[AccountInfo],
+        instruction_data: &[u8],
+    ) -> ProgramResult {
+        Ok(())
+    }
+
+    fn donate(
+        program_id: &Pubkey.
+        accounts: &[AccountInfo],
+        _instruction_data: &[u8], 
+    ) -> ProgramResult {
+        Ok(())
+    }
