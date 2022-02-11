@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /program/target/
+
+keypair.json
+program-keypair.json
